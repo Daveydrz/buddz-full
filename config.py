@@ -74,7 +74,7 @@ REAL_TIME_PROCESSING = True
 
 # ==== VOICE ACTIVITY DETECTION ====
 # Note: Optimized for better speech detection (less aggressive filtering)
-VAD_THRESHOLD = 200                 # Lower threshold for better sensitivity
+VAD_THRESHOLD = 400                 # Lower threshold for better sensitivity
 MIN_SPEECH_FRAMES = 4               # Faster speech detection
 MAX_SILENCE_FRAMES = 150            # More patience for pauses
 INTERRUPT_THRESHOLD = 1500
@@ -100,6 +100,6 @@ AEC_VOICE_PROTECTION = True
 
 # ==== HUMAN SPEECH PROTECTION ====
 # Note: Disabled for testing to avoid conflicts with voice processing
-HUMAN_SPEECH_PROTECTION = False     # DISABLED for testing
+HUMAN_SPEECH_PROTECTION = True     # DISABLED for testing
 MINIMAL_PROCESSING_MODE = True
 SPEECH_QUALITY_PRIORITY = True
